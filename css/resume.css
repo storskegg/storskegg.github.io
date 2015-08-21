@@ -19,6 +19,97 @@ a:visited {
 a:active {
   color: blue;
 }
+p {
+  line-height: 1.15rem;
+}
+article {
+  border-left: 1rem solid #666666;
+  padding-left: 1rem;
+}
+article:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+article::before {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+article.objective::before {
+  content: 'Objective';
+}
+article.experience::before {
+  content: 'Experience';
+}
+article.skills::before {
+  content: 'Skills';
+}
+section header {
+  margin-top: 0.5rem;
+}
+ul.unstyled,
+ol.unstyled {
+  list-style-type: none;
+}
+.column,
+.columns {
+  -webkit-column-width: auto;
+  -moz-column-width: auto;
+  column-width: auto;
+}
+.column.ruled,
+.columns.ruled {
+  column-rule: 1pt solid #666666;
+}
+.column.one,
+.columns.one {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+.column.two,
+.columns.two {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+.skills ul {
+  padding-left: 0;
+}
+.skills ul li {
+  padding-left: 1rem;
+}
+.skills ul li::first-line {
+  padding-left: 1rem;
+}
+.skills ul li header {
+  display: inline-block;
+  font-weight: bold;
+}
+.skills ul li header::after {
+  content: ':';
+  padding-right: 1rem;
+}
+.accomplishments,
+.responsibilities {
+  padding-left: 2rem;
+}
+.accomplishments li,
+.responsibilities li {
+  list-style-type: square;
+}
+.duration {
+  float: right;
+}
+small {
+  color: #666;
+  letter-spacing: 0.05rem;
+  padding-left: 0.5rem;
+}
+.meta,
+.links {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
 @media only screen {
   .mug_wrap {
     position: absolute;
@@ -56,94 +147,5 @@ a:active {
   }
   body > header {
     position: relative;
-  }
-}
-@media screen {
-  p {
-    line-height: 1.15rem;
-  }
-  article {
-    border-left: 1rem solid #666;
-    padding-left: 1rem;
-  }
-  article:not(:last-of-type) {
-    margin-bottom: 1rem;
-  }
-  article::before {
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
-  article.objective::before {
-    content: 'Objective';
-  }
-  article.experience::before {
-    content: 'Experience';
-  }
-  article.skills::before {
-    content: 'Skills';
-  }
-  section header {
-    margin-top: 0.5rem;
-  }
-  ul.unstyled,
-  ol.unstyled {
-    list-style-type: none;
-  }
-  .column,
-  .columns {
-    -webkit-column-width: auto;
-    -moz-column-width: auto;
-    column-width: auto;
-  }
-  .column.one,
-  .columns.one {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-  .column.two,
-  .columns.two {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-  .skills ul {
-    padding-left: 0;
-  }
-  .skills ul li {
-    padding-left: 1rem;
-  }
-  .skills ul li::first-line {
-    padding-left: 1rem;
-  }
-  .skills ul li header {
-    display: inline-block;
-    font-weight: bold;
-  }
-  .skills ul li header::after {
-    content: ':';
-    padding-right: 1rem;
-  }
-  .accomplishments,
-  .responsibilities {
-    padding-left: 2rem;
-  }
-  .accomplishments li,
-  .responsibilities li {
-    list-style-type: square;
-  }
-  .duration {
-    float: right;
-  }
-  small {
-    color: #666;
-    letter-spacing: 0.05rem;
-    padding-left: 0.5rem;
-  }
-  .meta,
-  .links {
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
   }
 }

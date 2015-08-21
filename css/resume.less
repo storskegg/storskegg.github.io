@@ -1,5 +1,13 @@
+@grey: #666;
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  & > header {
+    h1 {}
+  }
 }
 
 a {
@@ -22,6 +30,127 @@ a {
     color: blue;
   }
 }
+
+p {
+  line-height: 1.15rem;
+}
+
+article {
+  border-left: 1rem solid @grey;
+  padding-left: 1rem;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+
+  &::before {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  &.objective {
+    &::before {
+      content: 'Objective';
+    }
+  }
+
+  &.experience {
+    &::before {
+      content: 'Experience';
+    }
+  }
+
+  &.skills {
+    &::before {
+      content: 'Skills';
+    }
+  }
+}
+
+section {
+  header {
+    margin-top: 0.5rem;
+  }
+}
+
+ul, ol {
+  &.unstyled {
+    list-style-type: none;
+  }
+}
+
+.column,
+.columns {
+  -webkit-column-width: auto;
+  -moz-column-width: auto;
+  column-width: auto;
+
+  &.ruled {
+    column-rule: 1pt solid @grey;
+  }
+
+  &.one {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+  &.two {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+.skills {
+  ul {
+    padding-left: 0;
+
+    li {
+
+      padding-left: 1rem;
+
+      &::first-line {
+        padding-left: 1rem;
+      }
+
+      header {
+        display: inline-block;
+        font-weight: bold;
+
+        &::after {
+          content: ':';
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.accomplishments,
+.responsibilities {
+  padding-left: 2rem;
+
+  li {
+    list-style-type: square;
+  }
+}
+
+.duration {
+  float: right;
+}
+small {
+  color: #666;
+  letter-spacing: 0.05rem;
+  padding-left: 0.5rem;
+}
+.meta,
+.links {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
 
 @media only screen {
   .mug_wrap {
@@ -68,129 +197,5 @@ a {
     &>header {
       position: relative;
     }
-  }
-}
-
-@media screen {
-  body {
-    & > header {
-      h1 {}
-    }
-  }
-
-  p {
-    line-height: 1.15rem;
-  }
-
-  article {
-    border-left: 1rem solid #666;
-    padding-left: 1rem;
-
-    &:not(:last-of-type) {
-      margin-bottom: 1rem;
-    }
-
-    &::before {
-      font-size: 1.6rem;
-      font-weight: bold;
-    }
-
-    &.objective {
-      &::before {
-        content: 'Objective';
-      }
-    }
-
-    &.experience {
-      &::before {
-        content: 'Experience';
-      }
-    }
-
-    &.skills {
-      &::before {
-        content: 'Skills';
-      }
-    }
-  }
-
-  section {
-    header {
-      margin-top: 0.5rem;
-    }
-  }
-
-  ul, ol {
-    &.unstyled {
-      list-style-type: none;
-    }
-  }
-
-  .column,
-  .columns {
-    -webkit-column-width: auto;
-    -moz-column-width: auto;
-    column-width: auto;
-
-    &.one {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1;
-    }
-
-    &.two {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
-    }
-  }
-
-  .skills {
-    ul {
-      padding-left: 0;
-
-      li {
-
-        padding-left: 1rem;
-
-        &::first-line {
-          padding-left: 1rem;
-        }
-
-        header {
-          display: inline-block;
-          font-weight: bold;
-
-          &::after {
-            content: ':';
-            padding-right: 1rem;
-          }
-        }
-      }
-    }
-  }
-
-  .accomplishments,
-  .responsibilities {
-    padding-left: 2rem;
-
-    li {
-      list-style-type: square;
-    }
-  }
-
-  .duration {
-    float: right;
-  }
-  small {
-    color: #666;
-    letter-spacing: 0.05rem;
-    padding-left: 0.5rem;
-  }
-  .meta,
-  .links {
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
   }
 }
