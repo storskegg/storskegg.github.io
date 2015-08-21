@@ -57,6 +57,8 @@ ol.unstyled {
 }
 .column.ruled,
 .columns.ruled {
+  -webkit-column-rule: 1pt solid #666666;
+  -moz-column-rule: 1pt solid #666666;
   column-rule: 1pt solid #666666;
 }
 .column.one,
