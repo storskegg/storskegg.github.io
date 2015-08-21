@@ -5,6 +5,8 @@
 a {
   text-decoration: none;
   color: blue;
+  -webkit-transform: all ease-in-out 0.2s;
+  -ms-transform: all ease-in-out 0.2s;
   transform: all ease-in-out 0.2s;
   border-bottom: 1px solid transparent;
 }
@@ -89,14 +91,20 @@ a:active {
   }
   .column,
   .columns {
+    -webkit-column-width: auto;
+    -moz-column-width: auto;
     column-width: auto;
   }
   .column.one,
   .columns.one {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
     column-count: 1;
   }
   .column.two,
   .columns.two {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
     column-count: 2;
   }
   .skills ul {
@@ -134,6 +142,8 @@ a:active {
   }
   .meta,
   .links {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
     break-inside: avoid;
   }
 }
