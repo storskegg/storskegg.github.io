@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  transform: all ease-in-out 0.2s;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid blue;
+  }
+
+  &:visited {
+    color: blue;
+  }
+
+  &:active {
+    color: blue;
+  }
+}
+
+@media only screen {
+  .mug_wrap {
+    position: absolute;
+    top: -1in;
+    right: -0.8in;
+
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.5);
+
+    width: 1.5in;
+    height: 1.5in;
+    border-radius: 20px;
+    margin: 0;
+    text-align: center;
+
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/102862/bgnoise.png), -webkit-radial-gradient(top center, #184dd5, #2d3da4 10rem);
+  }
+  .liams_mug {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5% auto;
+
+    background-image: url(https://s3.amazonaws.com/storskegg.public/img/me/storskegg_500sm.jpg);
+    background-size: cover;
+  }
+
+  html {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/102862/bgnoise.png"), -webkit-radial-gradient(top center, #f7931e, #f15a24 750px);
+  }
+
+  body {
+    width: 80vw;
+    max-width: 8.5in;
+    min-height: 11in;
+    margin: 0.75in auto 0.75in;
+    padding: 0.5in;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.5);
+
+    font: 10pt/12pt normal 'Helvetica Neue';
+
+    &>header {
+      position: relative;
+    }
+  }
+}
+
+@media screen {
+  body {
+    & > header {
+      h1 {}
+    }
+  }
+
+  p {
+    line-height: 1.15rem;
+  }
+
+  article {
+    border-left: 1rem solid #666;
+    padding-left: 1rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+
+    &::before {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    &.objective {
+      &::before {
+        content: 'Objective';
+      }
+    }
+
+    &.experience {
+      &::before {
+        content: 'Experience';
+      }
+    }
+
+    &.skills {
+      &::before {
+        content: 'Skills';
+      }
+    }
+  }
+
+  section {
+    header {
+      margin-top: 0.5rem;
+    }
+  }
+
+  ul, ol {
+    &.unstyled {
+      list-style-type: none;
+    }
+  }
+
+  .column,
+  .columns {
+    column-width: auto;
+
+    &.one {
+      column-count: 1;
+    }
+
+    &.two {
+      column-count: 2;
+    }
+  }
+
+  .skills {
+    ul {
+      padding-left: 0;
+
+      li {
+
+        padding-left: 1rem;
+
+        &::first-line {
+          padding-left: 1rem;
+        }
+
+        header {
+          display: inline-block;
+          font-weight: bold;
+
+          &::after {
+            content: ':';
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .accomplishments,
+  .responsibilities {
+    padding-left: 2rem;
+
+    li {
+      list-style-type: square;
+    }
+  }
+
+  .duration {
+    float: right;
+  }
+  small {
+    color: #666;
+    letter-spacing: 0.05rem;
+    padding-left: 0.5rem;
+  }
+  .meta,
+  .links {
+    break-inside: avoid;
+  }
+}
