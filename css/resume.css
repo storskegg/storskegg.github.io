@@ -73,6 +73,21 @@ ol.unstyled {
   -moz-column-count: 2;
   column-count: 2;
 }
+.column.flex,
+.columns.flex {
+  column-count: none;
+  column-width: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: stretch;
+}
+.column.flex > *,
+.columns.flex > * {
+  flex-grow: 1;
+}
 .fade {
   opacity: 0.5;
 }

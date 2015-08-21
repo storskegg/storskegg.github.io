@@ -102,6 +102,22 @@ ul, ol {
     -moz-column-count: 2;
     column-count: 2;
   }
+
+  &.flex {
+    column-count: none;
+    column-width: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+
+    &>* {
+      flex-grow: 1;
+    }
+  }
 }
 
 .fade {
