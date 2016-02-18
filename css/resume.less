@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 @grey: #666;
 
 * {
@@ -5,7 +7,12 @@
 }
 
 body {
-  & > header {
+  font-size: 10pt;
+  line-height: 12pt;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+
+  > header {
     h1 {}
   }
 }
@@ -44,6 +51,7 @@ article {
   }
 
   &::before {
+    position: relative;
     font-size: 1.6rem;
     font-weight: bold;
   }
@@ -68,7 +76,7 @@ article {
 }
 
 section {
-  header {
+  > header {
     margin-top: 0.5rem;
   }
 }
@@ -190,6 +198,7 @@ small {
 
     background-image: url(/img/bgnoise.png), -webkit-radial-gradient(top center, #184dd5, #2d3da4 10rem);
   }
+
   .liams_mug {
     width: 90%;
     height: 90%;
@@ -214,10 +223,36 @@ small {
     background-color: rgba(255, 255, 255, 0.85);
     box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.5);
 
-    font: 10pt/12pt normal 'Helvetica Neue';
-
-    &>header {
+    > header {
       position: relative;
+    }
+  }
+}
+
+@media only print {
+  @page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+  }
+
+  article {
+    page-break-inside: avoid;
+    // hack for how chrome renders print
+    padding-top: 0.15in;
+  }
+
+
+  .links {
+    display: none;
+  }
+
+  .meta {
+    padding-bottom: 0.2in;
+
+    > * {
+      position: relative;
+      display: inline-block;
+      margin-right: 0.15in;
     }
   }
 }
