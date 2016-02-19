@@ -179,6 +179,10 @@ small {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
+
+  ul {
+    margin: 0;
+  }
 }
 
 
@@ -233,12 +237,6 @@ small {
   @page {
     size: 8.5in 11in;
     margin: 0.5in;
-  }
-
-  article {
-    page-break-inside: avoid;
-    // hack for how chrome renders print
-    padding-top: 0.15in;
   }
 
 

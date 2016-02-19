@@ -138,6 +138,10 @@ small {
   page-break-inside: avoid;
   break-inside: avoid;
 }
+.meta ul,
+.links ul {
+  margin: 0;
+}
 @media only screen {
   .mug_wrap {
     position: absolute;
@@ -180,10 +184,6 @@ small {
   @page {
     size: 8.5in 11in;
     margin: 0.5in;
-  }
-  article {
-    page-break-inside: avoid;
-    padding-top: 0.15in;
   }
   .links {
     display: none;
