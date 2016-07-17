@@ -1,0 +1,25 @@
+{
+  "name": "storskegg.github.io",
+  "version": "1.0.0",
+  "description": "My Resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storskegg/storskegg.github.io.git"
+  },
+  "author": "Liam Conrad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/storskegg/storskegg.github.io/issues"
+  },
+  "homepage": "https://github.com/storskegg/storskegg.github.io#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "node-sass": "^3.8.0",
+    "react": "^15.2.1",
+    "webpack": "^1.13.1"
+  }
+}
