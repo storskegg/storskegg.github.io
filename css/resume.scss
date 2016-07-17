@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
-$blue: blue;
+$blue: #00f;
 $grey: #666;
 
-$bg-noise: url(/img/bgnoise.png)
+$bg-noise: url(/img/bgnoise.png);
 
 * {
   box-sizing: border-box;
@@ -109,6 +109,8 @@ ul, ol {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+    column-fill: balance;
+    column-gap: 10px;
   }
 
   &.flex {
@@ -149,7 +151,7 @@ ul, ol {
 
         &::after {
           content: ':';
-          padding-right: 1rem;
+          padding-right: 0.75rem;
         }
       }
     }
@@ -158,10 +160,20 @@ ul, ol {
 
 .accomplishments,
 .responsibilities {
-  padding-left: 2rem;
+  padding-left: 0.75rem;
 
   li {
-    list-style-type: square;
+    break-inside: avoid;
+    list-style: none;
+    margin-left: 1rem;
+    padding-left: .15rem;
+
+    &::before {
+      content: '\25a0';
+      display: inline-block;
+      margin-left: -0.77rem;
+      margin-right: 0.5rem;
+    }
   }
 }
 
