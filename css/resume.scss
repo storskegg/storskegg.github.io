@@ -43,6 +43,7 @@ p {
 
 article {
   border-left: 1rem solid $grey;
+  margin-top: 1rem;
   padding-left: 1rem;
   padding-top: 3px;
 
@@ -228,8 +229,6 @@ small {
   }
 
   article {
-    margin-top: 1.5rem;
-
     &:not(:last-of-type) {
       margin-bottom: 0;
     }
@@ -260,6 +259,10 @@ small {
   @page {
     margin: 0.5in;
     size: 8.5in 11in;
+  }
+
+  header > h1 {
+    margin: 0.5em 0;
   }
 
   section > header h3 {
