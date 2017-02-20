@@ -145,7 +145,6 @@ small {
     text-align: center;
     top: -1in;
     width: 1.5in; }
-
   .liams_mug {
     background-image: url(/img/storskegg_500sm.jpg);
     background-size: cover;
@@ -154,15 +153,12 @@ small {
     margin: 5% auto;
     overflow: hidden;
     width: 90%; }
-
   html {
     background-image: url(/img/bgnoise.png), -webkit-radial-gradient(top center, #f7931e, #f15a24 750px); }
-
   article {
-    margin-top: 2rem; }
+    margin-top: 1.5rem; }
     article:not(:last-of-type) {
       margin-bottom: 0; }
-
   body {
     background-color: rgba(255, 255, 255, 0.85);
     box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.5);
@@ -173,27 +169,24 @@ small {
     width: 80vw; }
     body > header {
       position: relative; } }
+
 @media only screen and (max-width: 1024px) {
   body {
     width: 100vw; } }
+
 @media only print {
   @page {
     margin: 0.5in;
     size: 8.5in 11in; }
   section > header h3 {
     margin-bottom: 0; }
-
   .summary {
     margin-top: 4pt; }
-
   .links {
     display: none; }
-
   .meta {
     padding-bottom: 0.2in; }
     .meta > * {
       display: inline-block;
       margin-right: 0.15in;
       position: relative; } }
-
-/*# sourceMappingURL=resume.css.map */
