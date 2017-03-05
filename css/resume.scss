@@ -78,7 +78,11 @@ article {
 
 section {
   > header {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
+
+    h3 {
+      margin: 0;
+    }
   }
 }
 
@@ -267,6 +271,10 @@ small {
 
   section > header h3 {
     margin-bottom: 0;
+  }
+
+  .skills {
+    margin-top: 0;
   }
 
   .summary {
