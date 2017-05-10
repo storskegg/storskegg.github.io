@@ -1,7 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
-$blue: #00f;
-$grey: #666;
+$blue: #0D47A1;
+$grey: #616161;
+
+$bg-color: #455A64;
+$mug-color: #6D4C41;
+$page-color: #EFEBE9;
 
 $bg-noise: url(/img/bgnoise.png);
 
@@ -13,7 +17,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 10pt;
   font-weight: normal;
-  line-height: 12pt;
+  line-height: 14pt;
 }
 
 a {
@@ -140,7 +144,7 @@ ul, ol {
 
 .skills {
   ul {
-    padding-left: 0;
+    padding-left: 0.6em;
 
     li {
 
@@ -206,7 +210,8 @@ small {
 
 @media only screen {
   .mug_wrap {
-    background-image: $bg-noise, -webkit-radial-gradient(top center, #184dd5, #2d3da4 10rem);
+    background-color: $mug-color;
+    background-image: $bg-noise;
     border-radius: 20px;
     box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.5);
     height: 1.5in;
@@ -229,7 +234,8 @@ small {
   }
 
   html {
-    background-image: $bg-noise, -webkit-radial-gradient(top center, #f7931e, #f15a24 750px);
+    background-color: $bg-color;
+    background-image: $bg-noise;
   }
 
   article {
@@ -239,7 +245,7 @@ small {
   }
 
   body {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: $page-color;
     box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.5);
     margin: 0.75in auto 0.75in;
     max-width: 8.5in;
