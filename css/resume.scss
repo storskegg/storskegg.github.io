@@ -261,7 +261,42 @@ small {
 
 @media only screen and (max-width: 1024px) {
   body {
+    margin: 0;
+    padding: 1.25rem 2rem;
     width: 100vw;
+  }
+
+  article {
+    border-left-width: 0.5rem;
+  }
+
+  h1 {
+    line-height: 120%;
+  }
+
+  .columns {
+    column-count: 1 !important;
+  }
+
+  .duration {
+    color: #666;
+    display: block;
+    float: none;
+    font-size: 80%;
+    padding-left: 0.5rem;
+  }
+
+  .experience {
+    section {
+      header small {
+        display: block;
+      }
+    }
+  }
+
+  .liams_mug,
+  .mug_wrap {
+    display: none;
   }
 }
 
