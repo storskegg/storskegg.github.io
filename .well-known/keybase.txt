@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/storskegg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://storskegg.github.io
+  * I am storskegg (https://keybase.io/storskegg) on keybase.
+  * I have a public key ASAsKlfHw3n57KbGnGD4O7SHtzSUl_hRqTEkbJhTKtgFpAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01202c2a57c7c379f9eca6c69c60f83bb487b7349497f851a931246c98532ad805a40a",
+      "host": "keybase.io",
+      "kid": "01202c2a57c7c379f9eca6c69c60f83bb487b7349497f851a931246c98532ad805a40a",
+      "uid": "ac3b1482ccc7136fc3c1c94618dedb19",
+      "username": "storskegg"
+    },
+    "merkle_root": {
+      "ctime": 1503874912,
+      "hash": "d67c615c4b8c350a953718b0be9d605f985a99ab432f721d4094137ce2c9df4a15a979f25bf743b79405f36e248f7a8264b4175d215d99052c7ddcc566a3ca06",
+      "hash_meta": "495e8129a1516138395386e92a3957f12392f1c7ff15141c19ad2bd48d6a1a3a",
+      "seqno": 1351883
+    },
+    "service": {
+      "hostname": "storskegg.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.28"
+  },
+  "ctime": 1503874949,
+  "expire_in": 504576000,
+  "prev": "b4e7c97446b8d720d440663162db59095fa1b8e45d48d80e7d7751cc6955316b",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgLCpXx8N5+eymxpxg+Du0h7c0lJf4UakxJGyYUyrYBaQKp3BheWxvYWTFA017ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMmMyYTU3YzdjMzc5ZjllY2E2YzY5YzYwZjgzYmI0ODdiNzM0OTQ5N2Y4NTFhOTMxMjQ2Yzk4NTMyYWQ4MDVhNDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMmMyYTU3YzdjMzc5ZjllY2E2YzY5YzYwZjgzYmI0ODdiNzM0OTQ5N2Y4NTFhOTMxMjQ2Yzk4NTMyYWQ4MDVhNDBhIiwidWlkIjoiYWMzYjE0ODJjY2M3MTM2ZmMzYzFjOTQ2MThkZWRiMTkiLCJ1c2VybmFtZSI6InN0b3Jza2VnZyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwMzg3NDkxMiwiaGFzaCI6ImQ2N2M2MTVjNGI4YzM1MGE5NTM3MThiMGJlOWQ2MDVmOTg1YTk5YWI0MzJmNzIxZDQwOTQxMzdjZTJjOWRmNGExNWE5NzlmMjViZjc0M2I3OTQwNWYzNmUyNDhmN2E4MjY0YjQxNzVkMjE1ZDk5MDUyYzdkZGNjNTY2YTNjYTA2IiwiaGFzaF9tZXRhIjoiNDk1ZTgxMjlhMTUxNjEzODM5NTM4NmU5MmEzOTU3ZjEyMzkyZjFjN2ZmMTUxNDFjMTlhZDJiZDQ4ZDZhMWEzYSIsInNlcW5vIjoxMzUxODgzfSwic2VydmljZSI6eyJob3N0bmFtZSI6InN0b3Jza2VnZy5naXRodWIuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yOCJ9LCJjdGltZSI6MTUwMzg3NDk0OSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJiNGU3Yzk3NDQ2YjhkNzIwZDQ0MDY2MzE2MmRiNTkwOTVmYTFiOGU0NWQ0OGQ4MGU3ZDc3NTFjYzY5NTUzMTZiIiwic2Vxbm8iOjI5LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQAzPYgNSscSK+8rk44x8bCNasc8mUq8SmI0PYLf/K/X7AP2+zBwdyoBZXUEglZaCWWP58w/nktxsW8lZNQrrCg2oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCA5DDAxfmAWkWR1oAlc0Zb7vY3M6TJvoZJJ2KqeAje5t6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/storskegg
+
+==================================================================
