@@ -47,7 +47,7 @@ p {
 
 article {
   border-left: 1rem solid $grey;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding-left: 1rem;
   padding-top: 3px;
 
@@ -64,6 +64,12 @@ article {
   &.objective {
     &::before {
       content: 'Objective';
+    }
+  }
+
+  &.opensource_projects {
+    &::before {
+      content: 'Opensource Projects';
     }
   }
 
@@ -142,6 +148,7 @@ ul, ol {
   opacity: 0.5;
 }
 
+.opensource_projects,
 .skills {
   ul {
     padding-left: 0.6em;
