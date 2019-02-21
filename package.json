@@ -17,10 +17,14 @@
   },
   "homepage": "https://github.com/storskegg/storskegg.github.io#readme",
   "dependencies": {
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.11.0"
   },
   "devDependencies": {
-    "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch-sass": "^1.4.1",
+    "webpack": "^4.29.3",
+    "webpack-dev-server": "^3.1.14"
   }
 }
