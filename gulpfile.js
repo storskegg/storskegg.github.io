@@ -1,7 +1,12 @@
 const gulp = require("gulp")
 const sass = require("gulp-sass")
-const watchSass = require("gulp-watch-sass")
+const useref = require("gulp-useref")
+const cssnano = require("gulp-cssnano")
 
-gulp.task("sass", () => watchSass([ "./scss/*.{scss,css}" ])
-  .pipe(sass())
-  .pipe(gulp.dest("./css")));
+gulp.task("sass", function() {
+  return gulp.src(["scss/*.+(scss|css)"])
+    .pipe(useref())
+    .pipe(sass())
+    .pipe(cssnano())
+    .pipe(gulp.dest("./css"))
+})
