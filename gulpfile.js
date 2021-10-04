@@ -1,12 +1,14 @@
-const gulp = require("gulp")
+const { src, dest } = require('gulp');
 const sass = require("gulp-sass")
 const useref = require("gulp-useref")
 const cssnano = require("gulp-cssnano")
 
-gulp.task("sass", function() {
-  return gulp.src(["scss/*.+(scss|css)"])
+function sassTask() {
+  return src(["scss/*.+(scss|css)"])
     .pipe(useref())
     .pipe(sass())
     .pipe(cssnano())
-    .pipe(gulp.dest("./css"))
-})
+    .pipe(dest("./css"))
+}
+
+exports.default = sassTask;
