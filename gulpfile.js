@@ -1,5 +1,6 @@
 const { src, dest } = require('gulp');
-const sass = require("gulp-sass")
+const nodeSass = require('node-sass')
+const sass = require("gulp-sass")(nodeSass)
 const useref = require("gulp-useref")
 const cssnano = require("gulp-cssnano")
 
