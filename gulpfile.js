@@ -12,4 +12,5 @@ function sassTask() {
     .pipe(dest("./css"))
 }
 
+exports.sass = sassTask;
 exports.default = sassTask;

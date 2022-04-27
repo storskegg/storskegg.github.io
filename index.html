@@ -21,13 +21,13 @@
     <div class="mug_wrap">
       <figure class="liams_mug"></figure>
     </div>
-    <h1>Liam Conrad, Sr Software Engineer</h1>
+    <h1>Liam Conrad, Technical Architect</h1>
     <div class="flex columns">
       <section class="meta">
         <address class="physical">100 S Van Buren St, Stoughton, WI 53589</address>
         <tel><a href="tel:+16084660831">608.466.0831</a></tel>
-        <address class="email"><a href="mailto:liam@storskegg.org">liam&#x40;storskegg.org</a></address>
-        <address class="email"><a href="mailto:w4pho@arrl.org">w4pho&#x40;arrl.org</a></address>
+        <address class="email"><a href="mailto:liam@storskegg.org">liam&#x40;w4pho.net</a></address>
+<!--        <address class="email"><a href="mailto:w4pho@arrl.org">w4pho&#x40;arrl.org</a></address>-->
       </section>
 
       <section class="links">
@@ -60,6 +60,22 @@
     </article>
 
     <article class="experience">
+      <section id="exp_07">
+        <header>
+          <h3>Technical Architect <small>Altruize</small> <span class="duration">Nov 2021 - Present</span></h3>
+        </header>
+
+        <ul class="two ruled columns accomplishments">
+          <li>Roadmap engineering path to zero-trust architecture.</li>
+          <li>Designed secrets management service, backed by EKS, for the purpose of secure and performant secrets sharing within infrastructure.</li>
+          <li>Proposal for migrating away from zip code and lat/long-based geospatial querying in favor of Uber's H3 indexing for both proximity assessment and choropleth dataviz.</li>
+          <!-- -->
+          <li>Technical Decisions</li>
+          <li>Roadmap prioritization and time estimates</li>
+          <li>Cost forecasting, and engineering team requirements</li>
+        </ul>
+      </section>
+
       <section id="exp_06">
         <header>
           <h3>Sr Backend Engineer <small>Fetch</small> <span class="duration">Dec 2020 - Oct 2021</span></h3>
@@ -68,10 +84,10 @@
         <ul class="two ruled columns accomplishments">
           <li>Helped greenfield a social network built around the AWS Neptune graph database.</li>
           <li>Wrote tooling to initiate fast deletes, and facilitate bulkloads into AWS Neptune.</li>
+          <li>Developed Go Lambdas that keep the graph in sync with user and other data owned by other services through SNS subscriptions.</li>
           <li>Developed Scala scripts executed by Apache Spark to process bulk load data from parquets.</li>
           <li>Used Jupyter notebooks primarily as documentation for, and rapid development of the Gremlin statements necessary for querying and managing the graph.</li>
           <li>Wrote the Go service that provides the client API for mobile and other services to access data in Neptune.</li>
-          <li>Developed Go Lambdas that keep the graph in sync with user and other data owned by other services through SNS subscriptions.</li>
         </ul>
       </section>
 
