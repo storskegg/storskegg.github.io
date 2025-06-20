@@ -5,7 +5,6 @@ $blue: #0D47A1;
 $grey: purple;
 
 $bg-color: #455A64;
-$mug-color: #6D4C41;
 $page-color: #EFEBE9;
 
 $bg-noise: url(/img/bgnoise.png);
@@ -62,9 +61,9 @@ article {
     position: relative;
   }
 
-  &.education {
+  &.summary {
     &::before {
-      content: "Education & Learning";
+      content: "Summary";
     }
   }
 
@@ -166,7 +165,7 @@ ul, ol {
   opacity: 0.5;
 }
 
-.education,
+.summary,
 .opensource_projects,
 .skills {
   ul {
@@ -238,35 +237,11 @@ small {
 }
 
 // Out with the old, but leave it for posterity. It did get me to where I am.
-#exp_00, #exp_01, #exp_02, #exp_03, #exp_04 {
+#exp_early, #exp_00, #exp_01, #exp_02, #exp_03, #exp_04 {
   display: none;
 }
 
 @media only screen {
-  .mug_wrap {
-    background-color: $mug-color;
-    background-image: $bg-noise;
-    border-radius: 20px;
-    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.5);
-    height: 1.5in;
-    margin: 0;
-    position: absolute;
-    right: -0.8in;
-    text-align: center;
-    top: -1in;
-    width: 1.5in;
-  }
-
-  .liams_mug {
-    background-image: url(/img/storskegg_500sm.jpg);
-    background-size: cover;
-    border-radius: 50%;
-    height: 90%;
-    margin: 5% auto;
-    overflow: hidden;
-    width: 90%;
-  }
-
   html {
     background-color: $bg-color;
     background-image: $bg-noise;
@@ -328,11 +303,6 @@ small {
         display: block;
       }
     }
-  }
-
-  .liams_mug,
-  .mug_wrap {
-    display: none;
   }
 }
 
