@@ -19,10 +19,7 @@
 
 <body>
   <header>
-    <div class="mug_wrap">
-      <figure class="liams_mug"></figure>
-    </div>
-    <h1>William (Liam) Conrad, Technical Architect</h1>
+    <h1>William (Liam) Conrad, Staff/Principal Engineer</h1>
     <div class="flex columns">
       <section class="meta">
         <address class="physical">100 S Van Buren St, Stoughton, WI 53589</address>
@@ -32,52 +29,49 @@
 
       <section class="links">
         <ul class="unstyled">
-<!--          <li class="codepen"><a target="_blank" href="https://codepen.io/storskegg"><i class="fab fa-codepen"></i> CodePen</a></li>-->
           <li class="github"><a target="_blank" href="https://www.github.com/storskegg"><i class="fab fa-github"></i> Github</a></li>
           <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/pub/liam-conrad/96/2aa/4ba"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-<!--          <li class="keybase"><a target="_blank" href="https://keybase.io/storskegg"><i class="fab fa-keybase"></i> Keybase</a></li>-->
         </ul>
       </section>
     </div>
   </header>
 
   <main>
+    <article class="summary">
+      <ul class="one ruled columns unstyled">
+        <li>Self-taught software architect and engineer with 15+ years of professional experience designing embedded systems, backend infrastructure, and integrated hardware–software platforms. Proven track record of system ownership and architectural leadership across diverse industries, from scientific computing to commercial products. Seeking Staff/Principal-level role focused on technical leadership, deep system design, and cross-functional collaboration.</li>
+      </ul>
+    </article>
+
     <article class="skills">
-      <ul class="two ruled columns unstyled">
-        <li><header>Soft Skills</header>Leadership and Team Management, Effective Communication, Problem-Solving and Innovation, Adaptability and Flexibility, Collaboration and Interpersonal Skills, Strategic Planning and Organization, Analytical Thinking, Documentation and Knowledge Sharing</li>
-<!--        <li><header>Front End</header>React, Material-UI, Semantic-UI, jQuery, HTML5, CSS3, SASS/SCSS; Websockets, Web Workers, File API; Media Queries, CSS for Print</li>-->
-        <li><header>Back End</header>Go, Ruby, Perl, C/C++; Rails, urfave/cli, spf13/cli</li>
-<!--        <li><header>Operating Systems</header>Linux, FreeBSD, macOS</li>-->
-        <li><header>Ops</header>Nginx, FreeBSD Jails, CUPS, ZFS Replication, Consul+Dnsmasq, Nas4Free, mfsBSD</li>
-        <li><header>AWS</header>Neptune, EC2, S3, Route53, Lambda, Elastic Beanstalk, SQS, SNS, Jupyter</li>
+      <ul class="one ruled columns unstyled">
+        <li><header>Systems Architecture &amp; Integration</header>Embedded systems, FPGA control systems, hardware-software integration, device communications, scientific instrumentation, distributed systems, fault-tolerant architecture</li>
+        <li><header>Backend, DB &amp; Infrastructure</header>Go, Ruby, Perl, C/C++, Rails, AWS (EC2, S3, Route53, Lambda, Elastic Beanstalk, SQS, SNS, Neptune), Neo4j, MySQL, MariaDB, Postgres, Redis, BadgerDB, Nginx, FreeBSD, ZFS Replication, Consul, Dnsmasq</li>
+        <li><header>Specialties</header>Low-latency systems, telemetry pipelines, observability, documentation and knowledge sharing, cross-functional technical leadership, strategic problem solving</li>
+        <li><header>Leadership &amp; Collaboration</header>Architectural leadership, cross-team technical influence, effective communication, documentation and knowledge sharing, strategic problem solving</li>
       </ul>
     </article>
 
     <article class="opensource_projects">
-      <ul class="two ruled columns unstyled">
+      <ul class="one ruled columns unstyled">
         <li><header>scrybl</header> an ultra-minimalist javascript module intended for the front end that self-instantiates, overloads the default console object, and forwards logs to a configured POST endpoint using the Beacon API.</li>
         <li><header>cidrtool</header> a small cli application written in go for packing, unpacking, and repacking IPv4 addresses and CIDR ranges. Organized as both a library and an executable.</li>
-      </ul>
-    </article>
-
-    <article class="education">
-      <ul class="one ruled columns unstyled">
-        <li><header>Self-Taught Software Engineer</header> Extensive learning through self-guided study and professional experience since 2012.</li>
       </ul>
     </article>
 
     <article class="experience">
       <section id="exp_08">
         <header>
-          <h3>Sr Software Engineer <small>Sk3w Technologies, Inc</small> <span class="duration">July 2022 - Oct 2024</span></h3>
+          <h3>Sr Software Engineer (Architect role)<small>Sk3w Technologies, Inc</small> <span class="duration">July 2022 - Oct 2024</span></h3>
         </header>
 
-        <ul class="two ruled columns accomplishments">
-          <li>Led the software architecture and engineering of control plane services for an FPGA-based fiber network device that profiles and standardizes network latency across cross-connects.</li>
+        <ul class="one ruled columns accomplishments">
+          <li>Drove architecture to production readiness, supporting successful pilot evaluations across multiple industry stakeholders.</li>
+          <li>Championed and owned the control-plane architecture for an FPGA-based fiber optic network device, synchronizing memory maps, protocol handling, and latency control to deliver reliable profiling of fiber optic cross-connects.</li>
           <li>Partnered with electrical engineers to harmonize FPGA memory mappings with software accessors, achieving seamless hardware-software integration and functionality.</li>
-          <li>Devised and implemented a data smoothing technique to reduce measurement jitter, dramatically improving the accuracy and reliability of latency control and real-time data reporting.</li>
-          <li>Developed and implemented a robust communications protocol to streamline interactions between the software plane and attached fiber-optic switches, enhancing device interoperability and performance.</li>
-          <li>In collaboration with the CTO, architected a flexible configuration format using protocol buffers for control plane services, and crafted standardized upgrade paths for system configurations, markedly enhancing update processes and system stability.</li>
+          <li>Engineered a data smoothing layer that reduced measurement jitter by 70–80%, improving device accuracy, stabilizing latency updates, and de-noising real-time latency reporting.</li>
+          <li>Developed and implemented a robust communications protocol to streamline interactions between the software plane and attached fiber optic switches, facilitating robust interoperability and performance.</li>
+          <li>In collaboration with the CTO, architected a flexible, JSON configuration format for control plane services, and ensured standardized, fault-tolerant upgrade paths for system configurations.</li>
         </ul>
       </section>
 
@@ -86,17 +80,13 @@
           <h3>Technical Architect <small>Altruize</small> <span class="duration">Nov 2021 - July 2022</span></h3>
         </header>
 
-        <ul class="two ruled columns accomplishments">
-          <li>Directed team risk management and productivity strategies, ensuring alignment with project goals and timelines.</li>
-          <li>Led research and development of technical solutions and best practices, aligning with overarching security and business strategies through targeted PoCs.</li>
-          <li>Strategized and roadmapped key technical initiatives, prioritizing based on strategic interdependencies and impact to drive forward company objectives.</li>
-          <li>Articulated complex technical strategies and rationales to diverse audiences, ensuring clarity and alignment across technical and non-technical stakeholders.</li>
-          <li>Excelled in dynamic task management, adapting swiftly to urgent shifts and priorities to maintain operational continuity.</li>
-          <li>Championed the adoption of FIPS SP <nobr>800-207</nobr> compliant zero-trust architecture, leading the technical strategy and implementation phases.</li>
-          <li>Pioneered a shift from traditional geospatial querying to Uber’s H3 indexing, enhancing proximity assessments and choropleth data visualization through successful PoC execution.</li>
-          <li>Designed a robust secrets management service utilizing EKS, enhancing secure and efficient sharing of sensitive data across the infrastructure.</li>
-          <li>Focused on user-centric design principles, integrating user needs and expectations into technical solutions and UX strategies.</li>
+        <ul class="one ruled columns accomplishments">
+          <li>Championed adoption of FIPS SP 800-207 zero-trust architecture, leading technical strategy and implementation phases across the company’s infrastructure.</li>
+          <li>Pioneered transition from traditional geospatial querying to Uber’s H3 indexing, improving proximity assessments and choropleth visualizations through successful proof-of-concept and implementation.</li>
+          <li>Designed and implemented a robust secrets management service on EKS, enabling secure, efficient sharing of sensitive data across distributed infrastructure.</li>
+          <li>Articulated complex architectural strategies to diverse technical and non-technical stakeholders, ensuring clarity and alignment across product, engineering, and leadership teams.</li>
         </ul>
+
       </section>
 
       <section id="exp_06">
@@ -104,13 +94,13 @@
           <h3>Sr Backend Engineer <small>Fetch Rewards</small> <span class="duration">Dec 2020 - Oct 2021</span></h3>
         </header>
 
-        <ul class="two ruled columns accomplishments">
-          <li>Co-led the greenfield development of a novel social network platform leveraging AWS Neptune, designing a scalable graph database architecture to optimize social interactions.</li>
-          <li>Engineered specialized tools to enhance data management in AWS Neptune, including rapid deletion and efficient bulk loading capabilities, significantly improving performance.</li>
-          <li>Developed Go-based AWS Lambda functions to maintain real-time data synchronization across services via SNS subscriptions, ensuring data integrity and timeliness in the graph database.</li>
-          <li>Authored and executed Scala scripts using Apache Spark for processing large-scale data loads from Parquet files, optimizing data ingestion and processing workflows.</li>
-          <li>Utilized Jupyter notebooks to document and expedite the development of Gremlin queries for managing and querying the graph database, enhancing knowledge sharing and operational efficiency.</li>
-          <li>Designed and implemented a Go-based service API, facilitating secure and efficient access to Neptune data for mobile and other client services, enhancing user connectivity and data retrieval.</li>
+        <ul class="one ruled columns accomplishments">
+          <li>Architected and led development of the graph database architecture and surrounding services for a new social graph platform, optimizing data structures and queries in AWS Neptune for performance and scalability.</li>
+          <li>Designed and implemented a Go-based service API, enabling secure and efficient access to graph data for mobile and backend services.</li>
+          <li>Engineered high-performance data management tools for AWS Neptune, including rapid deletion and efficient bulk loading, significantly improving database throughput and operational efficiency.</li>
+          <li>Developed Go-based AWS Lambda functions to maintain real-time data synchronization across services via SNS subscriptions, ensuring data consistency across the social graph.</li>
+          <li>Authored Scala-based ETL pipelines with Apache Spark to process large-scale Parquet data loads, accelerating data ingestion and enrichment workflows.</li>
+          <li>Drove system optimization and production readiness for launch, contributing to improved query performance, data integrity, and cross-service reliability.</li>
         </ul>
       </section>
 
@@ -119,103 +109,50 @@
           <h3>Sr Software Engineer <small>Zendesk</small> <span class="duration">Aug 2017 - July 2020</span></h3>
         </header>
 
-        <ul class="two ruled columns accomplishments">
-          <li><strong>Combined Role as Security Champion:</strong> Led as the Security Champion, bridging the gap between the engineering and security teams, conducting security reviews, and identifying risks during architecture discussions, enhancing project security postures.</li>
-          <li><strong>Lead Developer for Major Product Launch:</strong> Spearheaded development on a high-stakes, full-stack application using Node.js and React, managing the migration of customer data across complex systems. Collaborated with global teams, playing a pivotal role in the successful launch of a customer-facing product.</li>
-          <li><strong>Development and Open-Sourcing of Tools:</strong> Authored the <code>cidrtool</code> CLI in response to IP allow-listing challenges, later open-sourcing it to benefit the wider community. Created an internal Node module for OAuth2 MAC authentication, streamlining the implementation of enhanced internal service security.</li>
-          <li><strong>Documentation and Conference Leadership:</strong> Authored the first Architecture Decision Record (ADR) for Guide Automated Translations, setting documentation standards. Presented internally on protocol buffers, promoting technical knowledge sharing.</li>
-          <li><strong>Community and Culture Building:</strong> Founded cross-team social groups to enhance workplace cohesion and led initiatives promoting a humanist approach to engineering culture. Actively assisted team members in mastering Git and exploring branching methodologies.</li>
-          <li><strong>Help Center and Service Refactoring:</strong> Contributed to the redesign of the Zendesk public-facing help center, and led the refactoring of internal services for automated translation, integrating a new vendor and optimizing performance.</li>
+        <ul class="one ruled columns accomplishments">
+          <li>Served as Security Champion for the organization, driving architectural reviews and risk assessments across engineering and security teams to enhance system security and resilience.</li>
+          <li>Led backend and data architecture for a major customer-facing product launch, designing system integration for complex cross-system data migration and global service reliability.</li>
+          <li>Authored and open-sourced <code>cidrtool</code> CLI to address IP allow-listing challenges, improving internal security practices and contributing to the broader engineering community.</li>
+          <li>Developed internal OAuth2 MAC authentication module, enabling secure inter-service communication and simplifying adoption of enhanced security protocols across teams.</li>
+          <li>Authored first Architecture Decision Record (ADR) for Guide Automated Translations, establishing engineering documentation standards and promoting architectural clarity.</li>
+          <li>Refactored core internal services for automated translation and vendor integration, improving performance and reliability of the public-facing Zendesk Help Center.</li>
         </ul>
       </section>
 
-      <!-- Everything below is hidden by display: none; -->
-
-      <section id="exp_04">
+      <section id="exp_early">
         <header>
-          <h3>Software Developer <small>FirmGuardian, LLC</small> <span class="duration">Apr 2017 - June 2018</span></h3>
+          <h3>Earlier Experience <span class="duration">Feb 2012 - Aug 2017</span></h3>
         </header>
 
-        <ul class="two ruled columns accomplishments">
-          <li>Spearheaded the development of a multiplatform encryption client utilizing Go and Electron.</li>
-          <li>Assist in the systems and technical architecture planning.</li>
-          <li>UX and Design of client application emphasizing simplicity and purpose within its workflow.</li>
+        <ul class="one ruled columns responsibilities">
+          <li>Administered FreeBSD server clusters across multiple datacenters</li>
+          <li>Database engineering and management (MySQL, Postgres)</li>
+          <li>Wrote and maintained various front end applications (ReactJS, Angular, VueJS, custom)</li>
+          <li>Wrote, maintained, and performed complete refactors of various backend services (Golang, PHP, NodeJS, Perl)</li>
+          <li>Managed various VOIP systems (Asterisk, 2600hz, IVR scripting in TwiML)</li>
+          <li>Implemented service failover across datacenters using Consul service advertisement behind DNSMasq</li>
+          <li>Maintenence of public-facing brand sites</li>
+          <li>Development of new internal applications to improve business-customer relations</li>
+          <li>Architecture and development of encrypted file sharing platform</li>
+          <li>UX and Design of client application emphasizing simplicity and purpose within its workflow</li>
         </ul>
-      </section>
 
-      <section id="exp_03">
-        <header>
-          <h3>Front End Engineer <small>LeMans Corp.</small> <span class="duration">Oct 2016 - Aug 2017</span></h3>
-        </header>
-
-        <ul class="two ruled columns accomplishments">
-          <li>Facilitate professional development of the front-end team via weekly presentations of core ES-Next concepts, backed by real-world code exercises relating to challenges solved in the existing codebase.</li>
-          <li>Assist team mates with advanced front-end development patterns.</li>
-          <li>Development of new internal applications to improve business-customer relations.</li>
-          <li>Ground-up rewrite of <a href="https://www.arctiva.com" target="_blank">Arctiva</a> theme.</li>
-          <li>Maintenence of public-facing brand sites.</li>
-          <li>Push initiatives to migrate from SVN to GIT, and modernize the front end.</li>
-          <li>Advocate use of JWT and OAuth2 for user/sessions verification at the REST API level.</li>
-          <li>Communicate frequently and transparently with BAs and product owners to assess design and development goals, and break down any challenges faced in a manner that is both detailed and customer-friendly.</li>
-          <li>Engage directly with the customer to better assess the customer's workflow and process requirements, and generally provide a positive face to support a quality customer-engineering relationship.</li>
-        </ul>
-      </section>
-
-      <section id="exp_02">
-        <header>
-          <h3>Front End Engineer <small>Spredfast</small> <span class="duration">Oct 2015 - July 2016</span></h3>
-        </header>
-
-        <ul class="two ruled columns accomplishments">
-          <li>Architect and engineer solutions to unify our front-end across multiple siloed products, Javascript frameworks, and distributed product teams.</li>
-          <li>Replace legacy Flash application components with HTML5 equivalents, while maintaining drop-in compatibility.</li>
-          <li>Define code-quality standards which maintain legacy browser compatibility (via build processes) while taking advantage of the latest ECMA and CSS feature sets.</li>
-          <li>Define version control strategies which allow multiple teams to create products which interoperate without conflict.</li>
-          <li>Prioritize feature-sets and implementation methods to achieve successful product launches under strict deadlines.</li>
-          <li>Data modeling across multiple Javascript MVC products.</li>
-          <li>React quickly to resolve high priority customer requests, frequently with same-day turnaround.</li>
-        </ul>
-      </section>
-
-      <section id="exp_01">
-        <header>
-          <h3>Full Stack Engineer and FreeBSD SysAdmin <small>Restore Health Pharmacies</small> <span class="duration">Oct 2013 - Oct 2015</span></h3>
-        </header>
-
-        <ul class="two ruled columns responsibilities">
-          <li>Architected and engineered, from the ground up, front end solutions to meet the needs of the sales team.</li>
-          <li>Introduced Consul service advertisement behind DNSMasq to facilitate redundancy within and across multiple datacenters.</li>
-          <li>Assisted with the full port of the Perl back-end from the Plack/Mason frameworks facilitating SOAP APIs to a fully asynchronous, non-blocking, RESTful API implemented with the Mojolicious framework.</li>
-          <li>Wrote new REST endpoints as necessary, following the Mojolicious port.</li>
-          <li>Assisted in the management of the VOIP system, including Asterisk server management, and IVR scripting with TwiML.</li>
-          <li>Managed Github repo using the Git Flow model.</li>
-          <li>FreeBSD systems administration, including: ZFS replication, CUPS, jail deployment, server instantiation and discovery over horizontally scaled systems across multiple datacenters.</li>
-          <li>Built small, supplemental products using ReactJS, Angular and MeteorJS. Additional microservices written in Node.js using the ExpressJS framework.</li>
-        </ul>
-      </section>
-
-      <section id="exp_00">
-        <header>
-          <h3>Freelance Web Developer <small>Sunfire Digital, and others</small> <span class="duration">Feb 2012 - Dec 2013</span></h3>
-        </header>
-
-        <p class="summary">Developed, repaired and migrated sites for a number of businesses on a contract and subcontract basis.</p>
-        <ul class="two ruled columns responsibilities">
-          <li>Server-to-Server Drupal Migration</li>
-          <li>Securing php backends and data storage</li>
-          <li>Development of HTML5 and WordPress sites</li>
-          <li>Implement jQuery and plugins</li>
-          <li>Development of responsive sites</li>
-          <li>UX Design consultation</li>
+        <ul class="one ruled columns responsibilities">
+          <li>React quickly to resolve high priority customer requests, frequently with same-day turnaround</li>
+          <li>Communicate frequently and transparently with BAs and product owners to assess design and development goals, and break down any challenges faced in a manner that is both detailed and customer-friendly</li>
+          <li>Engage directly with the customer/stakeholder to better assess the customer's workflow and process requirements, and generally provide a positive face to support a quality customer-engineering relationship</li>
+          <li>Define code-quality standards which maintain legacy browser compatibility (via build processes) while taking advantage of the latest ECMA and CSS feature sets</li>
+          <li>Prioritize feature-sets and implementation methods to achieve successful product launches under strict deadlines</li>
+          <li>Promote the professional development of teammates by providing guidance of advanced development patterns in both frontend and backend, and real-world code exercises relating to challenges solved in the existing codebase</li>
         </ul>
       </section>
     </article>
 
-<!--    <article class="education">-->
-<!--      <ul class="one ruled columns unstyled">-->
-<!--        <li>Self-Taught Software Engineer: Extensive learning through self-guided study, professional experience, and open-source contributions since 2012.</li>-->
-<!--      </ul>-->
-<!--    </article>-->
+    <article class="education">
+      <ul class="one ruled columns unstyled">
+        <li>Self-taught software architect and engineer with 15+ years of professional experience in embedded systems, device communications, and full-stack systems architecture.</li>
+      </ul>
+    </article>
   </main>
 </body>
 </html>
