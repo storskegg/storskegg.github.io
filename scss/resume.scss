@@ -90,6 +90,12 @@ article {
       content: 'Skills';
     }
   }
+
+  &.education {
+    &::before {
+      content: 'Education';
+    }
+  }
 }
 
 section {
@@ -165,6 +171,7 @@ ul, ol {
   opacity: 0.5;
 }
 
+.education,
 .summary,
 .opensource_projects,
 .skills {
@@ -333,6 +340,7 @@ small {
     //break-inside: avoid;
   }
 
+  .education,
   .summary {
     margin-top: 4pt;
   }
