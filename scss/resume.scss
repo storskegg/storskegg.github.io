@@ -18,6 +18,10 @@ body {
   font-size: 10pt;
   font-weight: normal;
   line-height: 14pt;
+
+  // done with engineering
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 a {
@@ -243,6 +247,28 @@ small {
   }
 }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 50;
+}
+
+.notification {
+  background: white;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  left: calc(50vw - 160px);
+  padding: 1rem;
+  position: absolute;
+  top: 14rem;
+  width: 320px;
+  z-index: 75;
+}
+
 // Out with the old, but leave it for posterity. It did get me to where I am.
 #exp_early, #exp_00, #exp_01, #exp_02, #exp_03, #exp_04 {
   display: none;
@@ -319,43 +345,47 @@ small {
     size: 8.5in 11in;
   }
 
-  article {
-    border-left-width: 0.25rem;
-    padding-left: 0.5rem;
-  }
-
-  header > h1 {
-    margin: 0.5em 0;
-  }
-
-  section > header h3 {
-    margin-bottom: 0;
-  }
-
-  .skills {
-    margin-top: 0;
-  }
-
-  .experience section {
-    break-inside: avoid;
-  }
-
-  .education,
-  .summary {
-    margin-top: 4pt;
-  }
-
-  .links {
+  * {
     display: none;
   }
 
-  .meta {
-    padding-bottom: 0.2in;
-
-    > * {
-      display: inline-block;
-      margin-right: 0.15in;
-      position: relative;
-    }
-  }
+  //article {
+  //  border-left-width: 0.25rem;
+  //  padding-left: 0.5rem;
+  //}
+  //
+  //header > h1 {
+  //  margin: 0.5em 0;
+  //}
+  //
+  //section > header h3 {
+  //  margin-bottom: 0;
+  //}
+  //
+  //.skills {
+  //  margin-top: 0;
+  //}
+  //
+  //.experience section {
+  //  break-inside: avoid;
+  //}
+  //
+  //.education,
+  //.summary {
+  //  margin-top: 4pt;
+  //}
+  //
+  //.links {
+  //  display: none;
+  //}
+  //
+  //.meta {
+  //  padding-bottom: 0.2in;
+  //
+  //  > * {
+  //    display: inline-block;
+  //    margin-right: 0.15in;
+  //    position: relative;
+  //  }
+  //}
 }
